@@ -2,13 +2,35 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Secret Translator</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js" type="module"></script>
   </head>
   <body>
     <div id="root">
-      <h1>Hello world!</h1>
+
+    <main>
+      <h1>SECRET TRANSLATOR</h1>
+      <p><em>No más momentos incómodos porque alguien lea tus mensajes por equivocación.<br>
+      Utiliza esta herramienta para codificar y decodificar tus mensajes, después cópialos y envíalos a quien más confianza le tengas.</em></p>
+        
+          <p>Ingresa la clave<br>
+          <input type="number" id="offset" class="txtbx">
+         </p>
+         <div class="container">
+        <div class="izq">
+          <textarea id="txt" placeholder="Tu texto aquí..." type="text" cols="30" rows="10"></textarea><br>
+        </div>
+        <div id="botones" class="btn">
+          <button id="btncodif" type="button">Cifrar</button><br>
+          <button id="btndecodif" type="button">Descifrar</button><br>
+          </div>
+        <div class="der">
+          <textarea id="rslt" placeholder="Tu resultado aquí..." type="text" cols="30" rows="10"></textarea><br>
+        </div>
+        </div>    
+    </main>
     </div>
-    <script src="index.js" type="module"></script>
   </body>
 </html>
+
